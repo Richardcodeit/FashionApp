@@ -1,0 +1,36 @@
+.fourthsection {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.fourthsection > div {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+.fourthsection > div div {
+    flex: 0 0 50%;
+}
+.fourthsection > div .content {
+    text-align: left;
+    align-self: center;
+}
+.fourthsection > div .content p {
+    max-width: fit-content;
+    font-size: 22px;
+}
+.fourthsection > div .image {
+    max-width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.fourthsection > div .image img {
+    width: 100%;
+}
+@media screen and (max-width:900px) {
+ .fourthsection > div {
+    flex-direction: column;
+ }
+   }

@@ -1,0 +1,46 @@
+  .secondSection {
+    position: relative;
+   width: 100%; 
+   margin-bottom: 200px;
+  }
+  .image-carousel {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: fit-content;
+    overflow-x:hidden ;
+    margin-bottom: 100px;
+  }
+  .image-carousel .container {
+   max-width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    transform: .5s linear;
+  }
+  .image-carousel .container .card{
+   width: 100%;
+   height: 100%;
+  }
+  .image-carousel .container .card .image {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+  }
+  .image-carousel .container .card .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .button .next {
+    position: absolute;
+    top :40%;
+    left: 20%;
+    width: 100px;
+    display: flex;
+  }
+  .button .prev {
+    position: absolute;
+    top :40%;
+    right: 20%;
+    display: flex;
+  }

@@ -1,0 +1,21 @@
+.Footer {
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+ }
+ .Footer ul {
+   list-style-type: none;
+ }
+ .Footer .moreInfo {
+  width: 50%;
+  margin: 0 auto;
+   display: flex;
+   flex-direction: row ;
+   gap: 20px;
+   text-align: left;
+ }

@@ -1,0 +1,81 @@
+.Items {
+    width: 100%;
+}
+.Items .container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    height: fit-content;
+}
+.Items h2 {
+    text-align: center;
+}
+.Items .container .card {
+    position: relative;
+    max-width: 500px;
+    height: fit-content;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px;
+    transition: .5s linear;
+}
+.Items .card:hover {
+    transform: scale(0.9);
+}
+.Items .container .card::before {
+    position: absolute;
+    content: "";
+    background-color: var(--secondary-color);
+    inset: 0;
+    z-index: -2;
+    border-radius: 20px;
+    opacity: 20%;
+}
+.Items .container .card .image {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.Items .container .card .image img {
+    width: 100%;
+    height: 100%;
+}
+.Items .container .card .contentButton {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Items .container .card .content {
+    text-align: left;    
+}
+.Items .container .card .content P{
+ width: 80%;
+ margin: 0 auto;
+ overflow-x: visible;
+}
+.Items .button {
+    align-self: center;
+}
+.Items button {
+    width: 100px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:900px) {
+    .Items .container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 50px;
+    }
+}
